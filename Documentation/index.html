@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Scriptor | Ghost Theme Documentation</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="site-header" role="banner">
+            <h1 class="site-title">Scriptor - Ghost Theme v1.1</h1>
+            <p class="site-description">Theme Documentation</p>
+        </header><!-- .site-header -->
+        <div id="main">
+            <div class="intro">
+                <p>First of all a huge thanks for purchasing this theme! If you have any questions that are not answered here, please feel free to email via our user page <a href="http://themeforest.net/user/justgoodthemes">here</a>. Thanks so much!</p>
+                <ul class="byline">
+                    <li><em>Email:</em> <a href="mailto:justgoodthemes@gmail.com">justgoodthemes@gmail.com</a></li>
+                    <li><em>Twitter:</em> <a href="https://twitter.com/justgoodthemes">@justgoodthemes</a></li>
+                </ul>
+            </div><!-- .intro -->
+            <div id="content" role="main">
+                <section>
+                    <h2 id="toc">Table of Contents</h2>
+                    <ol>
+                        <li><a href="#theme-info"><strong>Theme Information</strong></a>
+                            <ol>
+                                <li><a href="#keyfeatures">Key Features</a></li>
+                                <li><a href="#themestructure">Theme Structure</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#gettingStarted"><strong>How to Upload a Theme to Your Ghost Blog</strong></a>
+                            <ol>
+                                <li><a href="#SelfHosted">Upload a Theme to Self Hosted Ghost</a></li>
+                                <li><a href="#Ghost.io">Upload a Theme to Ghost.io</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#themeFeatures"><strong>Theme Features</strong></a>
+                            <ol>
+                                <li><a href="#StaticPages">Static Pages</a></li>
+                                <li><a href="#Navigation">Navigation</a></li>
+                                <li><a href="#DisqusComments">Disqus Comments</a></li>
+                                <li><a href="#GoogleAnalytics">Google Analytics</a></li>
+                                <li><a href="#SocialMediaLinks">Social Media Links (Footer)</a></li>
+                                <li><a href="#CopyrightInformation">Copyright Information (Footer)</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#Support"><strong>Support</strong></a></li>
+                        <li><a href="#Updates"><strong>Updates</strong></a></li>
+                        <li><a href="#Credits"><strong>Credits</strong></a></li>
+                    </ol>
+                    <hr />
+                </section>
+                <section>
+
+                    <h2 id="theme-info">A. Theme Information</h2>
+                    <ul>
+                      <li>Name: <strong>Scriptor</strong> - Ghost Theme</li>
+                      <li>Description: Minimal and responsive content focus one column <a href="https://ghost.org/">Ghost</a> theme</li>
+                      <li>Current Version: 1.1</li>
+                      <li>Released: 02/28/2014</li>
+                      <li>Creator: <a href="http://justgoodthemes.com">JustGoodThemes.com</a></li>
+                      <li><a href="https://ghost.org/">Ghost</a> version: 0.5.10</li>
+                    </ul>
+
+                    <h3 id="keyfeatures">1. Key Features</h3>
+                    <ul>
+                        <li>Retina ready</li>
+                        <li>Embedded Tweets &amp; Facebook Status support</li>
+                        <li>Font Awesome icons (retina ready)</li>
+                        <li>Mobile first &amp; fully responsive (wide, normal, narrow, mobile)</li>
+                        <li>Clean well commented code, easy to customize</li>
+                        <li>Google fonts (Droid Serif, Lato)</li>
+                        <li>Featured image support</li>
+                        <li>Disqus commenting</li>
+                    </ul>
+
+                    <h3 id="themestructure">2. Theme Structure</h3>
+                    <p>Here's an overview of the theme file structure.</p>
+<pre><code>.
+├── /assets
+|   ├── /css
+|       ├── style.css
+|   ├── /fonts
+|   ├── /images
+|   ├── /js
+|       ├── custom.js
+|       ├── jquery.fitvids.js
+├── /partials
+|   ├── comments.hbs [Add your Disqus user name here]
+|   ├── footer.hbs [Edit the social links &amp; copyright information here]
+|   ├── header.hbs
+|   ├── loop.hbs
+|   ├── navigation.hbs
+├── author.hbs
+├── default.hbs
+├── index.hbs
+├── package.json
+├── page.hbs
+├── post.hbs
+├── tag.hbs</code></pre>
+                    <hr />
+                </section>
+
+                <section>
+                    <h2 id="gettingStarted">B. How to Upload a Theme to Your Ghost Blog - <a href="#toc">top</a></h2>
+
+                    <h3 id="SelfHosted">1. Upload a Theme to Self Hosted Ghost</h3>
+                    <ul>
+                        <li><span>1.</span> Locate the theme directory within the download files. It can be found at <strong>theme/Scriptor</strong>.</li>
+                        <li><span>2.</span> Login to FTP/SFTP of your blog, or the file browser of your provided hosting service.</li>
+                        <li><span>3.</span> Navigate to the <strong>/content/theme</strong> directory within your Ghost installation.</li>
+                        <li><span>4.</span> Upload the <strong>Scriptor</strong> directory found in step one into the remote <strong>/content/theme</strong> directory.</li>
+                        <li><span>5.</span> Restart your Ghost service. The process for this will change dependent on your provider. If you are unaware how to restart the service please raise a support issue with your host.</li>
+                        <li><span>6.</span> Login to your Ghost admin panel. This can be found at <strong>yourdomain.com/ghost</strong>.</li>
+                        <li><span>7.</span> Navigate to the <strong>Settings > General</strong> tab.</li>
+                        <li><span>8.</span> In the <strong>Theme</strong> drop down, select the newly installed Scriptor Theme. Click <strong>Save</strong> to save the theme changes.</li>
+                    </ul>
+
+
+                    <h3 id="Ghost.io">2. Upload a Theme to Ghost.io</h3>
+                    <ul>
+                        <li><span>1.</span> Login to your Ghost.org user panel. Visit <a href="https://ghost.org/">Ghost.org</a> and enter your login credentials.</li>
+                        <li><span>2.</span> From your Ghost(Pro) dashboard, select the <strong>Settings</strong> (“gear”) icon to the right of the “Write a Post” button on the blog you wish to upload the theme.</li>
+                        <li><span>3.</span> In your blog’s control panel, you can either “drag &amp; drop” Scriptor theme zip file into the <strong>“Add a Theme”</strong> drop zone, or click on the drag &amp; drop zone to launch the traditional file upload prompt.</li>
+                        <li><span>4.</span> Upload the theme and <strong>Save All Blog Settings</strong>. You may have to activate the theme in your ghost admin panel.</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2 id="themeFeatures">C. Theme Features - <a href="#toc">top</a></h2>
+
+                    <h3 id="StaticPages">1. Static Pages</h3>
+
+                    <p>In order to create a static page you create a new post, just like you would any other post. Once you have opened up the new post, there is a cog wheel icon next to where it says "Save Draft" or "Update Post" depending on if you have published the post or not. Click on that cog, and check the "Turn this post into a static page" box. This will convert your post to a static page.</p>
+                    <p><img src="assets/images/staticpage.png" width="858" height="490" alt="static page"/></p>
+
+                    <h3 id="Navigation">2. Navigation</h3>
+
+                    <p>You can add, edit, delete and reorder menu links on your Ghost blog, directly from the navigation tool within the blog admin area, located at <strong>/ghost/settings/navigation/</strong>.</p>
+
+                    <p><img src="assets/images/navigation-edit.jpg" alt="navigation menu"/></p>
+
+                    <p>To include a static page on your navigation menu, first type the name of the page as you’d like it to appear on your menu in the label field.</p>
+
+                    <p><img src="assets/images/label-field.jpg" alt="label field"/></p>
+
+                    <p>Next, click inside the <strong>URL field</strong> of the menu item. The blog URL will auto-populate with http://yourdomain.com/. You will need to add in the page slug after the final <strong>/</strong>. Once satisfied with your page link, click the blue <strong>Save button</strong> to add the page to the navigation menu.</p>
+
+                    <h3 id="DisqusComments">4. Disqus Comments</h3>
+
+                    <p>Scriptor Theme comes with Disqus commenting built-in, you just need to have a <strong>Disqus</strong> account (you can create it at <a href="https://disqus.com/">Disqus.com</a>). To enable commenting, open up partials folder <strong>(Ghost/content/themes/scriptor/partials)</strong> and find the file <strong>comments.hbs</strong>. Alter the line <strong>"disqus_shortname = 'my_disqus_shortname';"</strong> to match your Disqus account shortname.</p>
+                    <p>If you wish to disable commenting, just remove all code from the file and save it. </p>
+
+                    <h3 id="GoogleAnalytics">5. Google Analytics</h3>
+
+                    <p>Requires an account, which can be obtained for free at <a href="http://analytics.google.com">http://analytics.google.com</a>. To enable Google Analytics, you need to copy and paste the Google Analytics tracking code into the <strong>default.hbs</strong> inside the <strong>&lt;head&gt;</strong> tag, just below the <strong>{{ghost_head}}</strong> and above <strong>&lt;/head&gt;</strong>.</p>
+
+                    <h3 id="SocialMediaLinks">6. Social Media Links (Footer)</h3>
+
+                    <p>The social media icons/links in the footer can be altered within the <strong>footer.hbs</strong> partial within the partials folder <strong>(Ghost/content/themes/scriptor/partials)</strong> of the theme. For example, to add your Twitter account, change the line <strong>{{! Add Twitter handle }}</strong> to your Twitter username and save it. It should work straight away. If it doesn't just restart your Ghost.</p>
+
+                    <h3 id="CopyrightInformation">7. Copyright Information (Footer)</h3>
+
+                    <p>You will find all copyright information in the <strong>&lt;div&gt;</strong> with the class <strong>"site-info"</strong> in the <strong>footer.hbs</strong> file within the partials folder <strong>(Ghost/content/themes/scriptor/partials)</strong> of the theme. If you want to remove copyright information in the footer simply delete the <strong>&lt;div&gt;</strong> with the class <strong>"site-info"</strong> and all code in it and save the file.</p>
+
+                    <hr />
+                </section>
+
+                <section>
+                    <h2 id="Support">D. Support - <a href="#toc">top</a></h2>
+                    <p>The documentation included provides all the information needed to get the theme installed and customized. However, if you have any questions you can email us at justgoodthemes@gmail.com, and we will be happy to help you.</p>
+                    <p>If you have any bug reports, or feature requests, please let us know!</p>
+
+                    <hr />
+                </section>
+
+                <section>
+                    <h2 id="Updates">E. Updates - <a href="#toc">top</a></h2>
+                    <p>As Ghost platform grows, so will this theme. We’re dedicated to keeping our <strong>Scriptor</strong> up to date.</p>
+                    <hr />
+                </section>
+
+                <section>
+                    <h2 id="Credits">F. Credits - <a href="#toc">top</a></h2>
+                    <p>We have used the following scripts, fonts or other files as listed.</p>
+                    <ul>
+                        <li>Droid Serif Font: <a href="https://www.google.com/fonts/specimen/Droid+Serif">https://www.google.com/fonts/specimen/Droid+Serif</a></li>
+                        <li>Lato Font: <a href="https://www.google.com/fonts/specimen/Lato">https://www.google.com/fonts/specimen/Lato</a></li>
+                        <li>Font Awesome Icons: <a href=" http://fontawesome.io"> http://fontawesome.io</a></li>
+                        <li>FitVids: <a href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+                    </ul>
+                    <hr />
+                </section>
+
+                <p><a href="#toc">Go To Table of Contents</a></p>
+            </div><!-- #content -->
+        </div><!-- #main -->
+        <footer class="site-info" role="contentinfo">
+            <p>© 2015 Just Good Themes. All rights reserved.</p>
+        </footer><!-- .site-info -->
+    </div><!-- .wrap -->
+</body>
+</html>
